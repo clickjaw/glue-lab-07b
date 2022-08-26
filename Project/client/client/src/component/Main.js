@@ -27,7 +27,7 @@ export default class Main extends Component {
             return(
             <div key = {idx}>
             <Card style = {{width:"18rem", margin: '10px', border: "3px blue solid"}}>
-            <Card.Header style = {{width: "18rem", backgroundColor:'blue', color:'white', fontWeight: 'bold'}}>{user.username}</Card.Header>
+            <Card.Header style = {{width: "18rem", color:'blue', fontWeight: 'bold'}}>{user.username}</Card.Header>
             <Card.Body>
             <Card.Text><b>Email:</b> {user.email}<br/>
                        <b>Bio:</b> {user.bio}<br/>
