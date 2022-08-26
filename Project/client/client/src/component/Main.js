@@ -26,11 +26,13 @@ export default class Main extends Component {
         {this.state.userData.map((user, idx)=> {
             return(
             <div key = {idx}>
-            <Card>
-            <Card.Title style = {{width: "12rem"}}>{user.username}</Card.Title>
-            <Card.Text>{user.email}<br/>
-                        {user.bio}<br/>
-                        {user.region}</Card.Text>
+            <Card style = {{width:"18rem", margin: '10px', border: "3px blue solid"}}>
+            <Card.Header style = {{width: "18rem", backgroundColor:'blue', color:'white', fontWeight: 'bold'}}>{user.username}</Card.Header>
+            <Card.Body>
+            <Card.Text><b>Email:</b> {user.email}<br/>
+                       <b>Bio:</b> {user.bio}<br/>
+                       <b>Region:</b> {user.region}</Card.Text>
+            </Card.Body>
             </Card>
             </div>
             )
